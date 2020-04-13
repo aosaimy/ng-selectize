@@ -2,7 +2,7 @@
   "name": "ng-selectize",
   "description": "Angular (2,4,...) directive for selectize.js",
   "author": "Nicholas Azar",
-  "version": "1.1.3",
+  "version": "1.1.3-fork2",
   "license": "MIT",
   "keywords": [
     "angular2-selectize",
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/NicholasAzar/ng-selectize/issues"
   },
-  "homepage": "hnpm ttps://github.com/NicholasAzar/ng-selectize#readme",
+  "homepage": "https://github.com/NicholasAzar/ng-selectize#readme",
   "angular-cli": {},
   "scripts": {
     "clean": "rimraf .tmp && rimraf dist",

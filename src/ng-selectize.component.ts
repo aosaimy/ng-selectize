@@ -213,12 +213,12 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 	 */
 	getPlaceholder(): string {
 		if (this.hasOptionsPlaceholder) {
-			if (this.options && this.options.length > 0) {
+			if (this.selectOptions && this.selectOptions.length > 0) {
 				return this.hasOptionsPlaceholder;
 			}
 		}
 		if (this.noOptionsPlaceholder) {
-			if (!this.options || this.options.length === 0) {
+			if (!this.selectOptions || this.selectOptions.length === 0) {
 				return this.noOptionsPlaceholder;
 			}
 		}
@@ -267,14 +267,14 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 	}
 
 	@Input()
-	set options(value: any[]) {
+	set selectOptions(value: any[]) {
 		this._options = value;
 		if (!this._options_differ && value) {
 			this._options_differ = this._differs.find(value).create();
 		}
 	}
 
-	get options(): any[] {
+	get selectOptions(): any[] {
 		return this._options;
 	}
 

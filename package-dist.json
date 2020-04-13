@@ -2,7 +2,7 @@
 	"name": "ng-selectize",
 	"description": "Angular (2,4,...) directive for selectize.js",
 	"author": "Nicholas Azar",
-	"version": "1.1.3",
+	"version": "1.1.3-fork2",
 	"license": "MIT",
 	"keywords": [
 		"angular2-selectize",
@@ -20,12 +20,12 @@
 	"private": false,
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/NicholasAzar/ng-selectize.git"
+		"url": "git+https://github.com/lellisls/ng-selectize.git"
 	},
 	"bugs": {
-		"url": "https://github.com/NicholasAzar/ng-selectize/issues"
+		"url": "https://github.com/lellisls/ng-selectize/issues"
 	},
-	"homepage": "https://github.com/NicholasAzar/ng-selectize#readme",
+	"homepage": "https://github.com/lellisls/ng-selectize#readme",
 
 	"main": "bundles/ng-selectize.umd.min.js",
 	"module": "index.js",
@@ -34,9 +34,9 @@
 		"lodash.clonedeep": "^4.5.0"
 	},
 	"peerDependencies": {
-		"@angular/core": "^4.2.4 || ^5.1.0",
+		"@angular/core": "^9.1.1",
 		"reflect-metadata": "^0.1.8",
-		"rxjs": "^5.4.2",
-		"zone.js": "^0.8.14"
+		"rxjs": "^6.5.5",
+		"zone.js": "^0.10.3"
 	}
 }
