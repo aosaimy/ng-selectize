@@ -112,22 +112,22 @@ export class NgSelectizeComponent implements OnInit, OnChanges, DoCheck, Control
 	}
 
 	private _applyOptionsChanges(changes: IterableChanges<any>): void {
-		changes.forEachAddedItem((record: IterableChangeRecord<any>) => {
-			this.onSelectizeOptionAdd(record.item);
-		});
 		changes.forEachRemovedItem((record: IterableChangeRecord<any>) => {
 			this.onSelectizeOptionRemove(record.item);
+		});
+		changes.forEachAddedItem((record: IterableChangeRecord<any>) => {
+			this.onSelectizeOptionAdd(record.item);
 		});
 		this.updatePlaceholder();
 		this.evalHasError();
 	}
 
 	private _applyOptionGroupChanges(changes: any): void {
-		changes.forEachAddedItem((record: IterableChangeRecord<any>) => {
-			this.onSelectizeOptGroupAdd(record.item);
-		});
 		changes.forEachRemovedItem((record: IterableChangeRecord<any>) => {
 			this.onSelectizeOptGroupRemove(record.item);
+		});
+		changes.forEachAddedItem((record: IterableChangeRecord<any>) => {
+			this.onSelectizeOptGroupAdd(record.item);
 		});
 		this.updatePlaceholder();
 		this.evalHasError();

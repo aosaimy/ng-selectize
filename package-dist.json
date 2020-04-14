@@ -20,12 +20,12 @@
 	"private": false,
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/NicholasAzar/ng-selectize.git"
+		"url": "git+https://github.com/llellis/ng-selectize.git"
 	},
 	"bugs": {
-		"url": "https://github.com/NicholasAzar/ng-selectize/issues"
+		"url": "https://github.com/llellis/ng-selectize/issues"
 	},
-	"homepage": "https://github.com/NicholasAzar/ng-selectize#readme",
+	"homepage": "https://github.com/llellis/ng-selectize#readme",
 
 	"main": "bundles/ng-selectize.umd.min.js",
 	"module": "index.js",
